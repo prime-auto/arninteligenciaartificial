@@ -1555,7 +1555,7 @@ OBSERVAÇÃO IMPORTANTE: Você é uma demonstração do agente. Não tem acesso 
     status('● Digitando...', 'var(--accent)');
     try{
       var messagesWithSystem = [{role:'system', content: SYSTEM_PROMPT}, ...HISTORY];
-      var r = await fetch('https://api.openai.com/v1/chat/completions', {
+      var r = await fetch('https://prime-hub.andrioli170mi.workers.dev', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

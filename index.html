@@ -1691,7 +1691,7 @@ OBSERVAÇÃO IMPORTANTE: Você é uma demonstração do agente. Não tem acesso 
     status2('● Digitando...','var(--accent2)');
     try{
       var msgs=[{role:'system',content:SYSTEM2}].concat(HISTORY2);
-      var r=await fetch('https://api.openai.com/v1/chat/completions',{
+      var r=await fetch('https://prime-hub.andrioli170mi.workers.dev',{
         method:'POST',
         headers:{'Content-Type':'application/json','Authorization':'Bearer '+API_KEY2},
         body:JSON.stringify({model:'gpt-4o-mini',max_tokens:1024,messages:msgs})

@@ -1554,7 +1554,7 @@ OBSERVAÇÃO IMPORTANTE: Você é uma demonstração do agente. Não tem acesso 
     status('● Digitando...', 'var(--accent)');
     try{
       var messagesWithSystem = [{role:'system', content: SYSTEM_PROMPT}, ...HISTORY];
-      var r = await fetch('testeopen.andrioli170mi.workers.dev', {
+      var r = await fetch('https://testeopen.andrioli170mi.workers.dev', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
